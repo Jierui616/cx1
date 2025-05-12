@@ -1,0 +1,11 @@
+n,m=map(int,input().split())
+b=list(map(int,input().split()))
+sor_sum=0
+for _ in range(m):
+    l,r=map(int,input().split())
+    pile_size=sum(b[l-1:r])
+    sor_sum ^=pile_size
+if sor_sum !=0:
+    print('first')
+else:
+    print('second')
